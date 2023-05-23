@@ -34,6 +34,61 @@ export interface Database {
   }
   public: {
     Tables: {
+      Subscriber: {
+        Row: {
+          created_at: string | null;
+          email: string | null;
+          first_name: string | null;
+          fmf: boolean | null;
+          id: number;
+          last_name: string | null;
+          newsletter: boolean | null;
+        }
+        Insert: {
+          created_at?: string | null;
+          email?: string | null;
+          first_name?: string | null;
+          fmf?: boolean | null;
+          id?: number;
+          last_name?: string | null;
+          newsletter?: boolean | null;
+        }
+        Update: {
+          created_at?: string | null;
+          email?: string | null;
+          first_name?: string | null;
+          fmf?: boolean | null;
+          id?: number;
+          last_name?: string | null;
+          newsletter?: boolean | null;
+        }
+      }
+      users: {
+        Row: {
+          created_at: string | null
+          email: string | null
+          first_name: string | null
+          id: number
+          last_name: string | null
+          password: string | null
+        }
+        Insert: {
+          created_at?: string | null
+          email?: string | null
+          first_name?: string | null
+          id?: number
+          last_name?: string | null
+          password?: string | null
+        }
+        Update: {
+          created_at?: string | null
+          email?: string | null
+          first_name?: string | null
+          id?: number
+          last_name?: string | null
+          password?: string | null
+        }
+      }
       memberships: {
         Row: {
           code: string | null
@@ -142,29 +197,6 @@ export interface Database {
           status?: Database["public"]["Enums"]["subscription_status"]
           trial_ends_at?: string | null
           trial_starts_at?: string | null
-        }
-      }
-      users: {
-        Row: {
-          created_at: string
-          display_name: string | null
-          id: string
-          onboarded: boolean
-          photo_url: string | null
-        }
-        Insert: {
-          created_at?: string
-          display_name?: string | null
-          id: string
-          onboarded: boolean
-          photo_url?: string | null
-        }
-        Update: {
-          created_at?: string
-          display_name?: string | null
-          id?: string
-          onboarded?: boolean
-          photo_url?: string | null
         }
       }
     }

@@ -13,7 +13,7 @@ const configuration = {
     twitterHandle: '',
     githubHandle: '',
     language: 'en',
-    convertKitFormId: '',
+    convertKitFormId: '5151131',
     locale: process.env.NEXT_PUBLIC_DEFAULT_LOCALE,
   },
   auth: {

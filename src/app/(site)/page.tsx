@@ -18,6 +18,8 @@ import Divider from '~/core/ui/Divider';
 import Hero from '~/core/ui/Hero';
 import Heading from '~/core/ui/Heading';
 import SlideUpTransition from '~/core/ui/SlideUpTransition';
+import NewsletterSignup from '~/app/(site)/components/NewsletterSignup';
+import SubscriberForm from './components/SubscribeForm';
 
 export default function Home() {
   return (
@@ -76,7 +78,7 @@ export default function Home() {
                 </div>
 
                 <div className={'flex items-center space-x-4'}>
-                  <Button round href={'/auth/sign-up'}>
+                 {/*  <Button round href={'/auth/sign-up'}>
                     <span className={'flex items-center space-x-2'}>
                       <span>Get Started</span>
 
@@ -88,12 +90,13 @@ export default function Home() {
                     <span className={'flex items-center space-x-2'}>
                       <span>View Pricing</span>
                     </span>
-                  </Button>
+                  </Button> */}
+                  <SubscriberForm showFirstName={false} showLastName={false} newsletter={false}  />
                 </div>
               </div>
             </div>
 
-            <div className={'flex justify-center py-12'}>
+            {/* <div className={'flex justify-center py-12'}>
               <Image
                 className={
                   'hero-image-shadow rounded-2xl' +
@@ -104,11 +107,11 @@ export default function Home() {
                 src={`/assets/images/dashboard-dark.webp`}
                 alt={`App Image`}
               />
-            </div>
+            </div> */}
           </SlideUpTransition>
         </Container>
 
-        <Container>
+       {/*  <Container>
           <div
             className={
               'flex flex-col items-center justify-center space-y-24 py-12'
@@ -211,7 +214,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-        </Container>
+        </Container> */}
 
         <Divider />
 
