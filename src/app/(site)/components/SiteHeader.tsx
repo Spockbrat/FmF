@@ -28,9 +28,9 @@ const SiteHeader: React.FCC<{
       <Container>
         <div className="flex w-full items-center justify-between">
           <div className={'flex items-center space-x-4 lg:space-x-8'}>
-            <Logo />
+            {/* <Logo /> */}
 
-            <SiteNavigation />
+            {/* <SiteNavigation /> */}
           </div>
 
           <div className={'flex flex-1 items-center justify-end space-x-4'}>
