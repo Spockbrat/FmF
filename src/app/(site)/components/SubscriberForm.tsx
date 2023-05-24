@@ -16,6 +16,7 @@ import { boolean } from 'zod';
 import { useState } from 'react';
 import { createSubscriber } from '~/lib/subscriber/mutations';
 import type { Subscriber } from '~/lib/subscriber/types/subscriber';
+import SlideUpTransition from '~/core/ui/SlideUpTransition';
 
 
 function CreateSubscriberForm({ showFirstName, showLastName, newsletter, onClose, }: { showFirstName: boolean, showLastName: boolean, newsletter: boolean, onClose: () => void }) {
@@ -36,7 +37,7 @@ function CreateSubscriberForm({ showFirstName, showLastName, newsletter, onClose
         newsletter: newsletter ? true : null,
         fmf: newsletter ? null : true
       };
-  
+  /* 
       await createSubscriber(client, subscriber);
   
       setEmail('');
@@ -45,7 +46,20 @@ function CreateSubscriberForm({ showFirstName, showLastName, newsletter, onClose
       setSubmitted(true);
       onClose();
 
-      console.log('Form submitted');
+      console.log('Form submitted'); */
+
+      try {
+        await createSubscriber(client, subscriber);
+  
+        // Clear form input values and set submitted state
+        setEmail('');
+        setFirstName('');
+        setLastName('');
+        setSubmitted(true);
+      } catch (error) {
+        // Handle error if the form submission fails
+        console.log('Error:', error);
+      }
     };
 
 
@@ -55,12 +69,16 @@ function CreateSubscriberForm({ showFirstName, showLastName, newsletter, onClose
         <p>
           {newsletter
             ? 'You have successfully subscribed to our newsletter!'
-            : 'Thank you for signing up!'}
+            : <SlideUpTransition>
+              <p className={'text-base font-semibold tracking-wider text-blue-600 mt-8 transition duration-700 ease-in-out'}>
+                Thank you for your interest!<br></br> You will recieve an invite in your email shortly</p>
+              </SlideUpTransition>}
         </p>
       );
     }
   
     return (
+      <SlideUpTransition>
       <div>
   
       <form onSubmit={onSubmit} className={'relative mt-8 sm:mt-10  rounded-full sm:mt-12'}>
@@ -105,6 +123,7 @@ function CreateSubscriberForm({ showFirstName, showLastName, newsletter, onClose
         </div>
       </form>
       </div>
+      </SlideUpTransition>
     );
   }
   

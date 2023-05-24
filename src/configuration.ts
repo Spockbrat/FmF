@@ -4,12 +4,12 @@ const production = process.env.NODE_ENV === 'production';
 
 const configuration = {
   site: {
-    name: 'Awesomely - Your SaaS Title',
-    description: 'Your SaaS Description',
+    name: 'Find My Fit',
+    description: 'Where you decide what companies match you',
     themeColor: '#ffffff',
     themeColorDark: '#0a0a0a',
     siteUrl: process.env.NEXT_PUBLIC_SITE_URL,
-    siteName: 'Awesomely',
+    siteName: 'BlendScore',
     twitterHandle: '',
     githubHandle: '',
     language: 'en',
@@ -32,7 +32,7 @@ const configuration = {
   },
   production,
   environment: process.env.NEXT_PUBLIC_ENVIRONMENT,
-  enableThemeSwitcher: true,
+  enableThemeSwitcher: false,
   paths: {
     signIn: '/auth/sign-in',
     signUp: '/auth/sign-up',

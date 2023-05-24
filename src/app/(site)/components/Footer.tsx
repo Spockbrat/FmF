@@ -26,7 +26,7 @@ function Footer() {
 
               <div>
                 <p className={'text-sm text-gray-500 dark:text-gray-400'}>
-                  Add a short tagline about your product
+                  Find My Fit is powered by BlendScore
                 </p>
               </div>
 
