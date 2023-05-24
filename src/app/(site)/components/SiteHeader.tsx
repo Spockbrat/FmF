@@ -2,7 +2,7 @@
 
 import { ArrowRightIcon } from '@heroicons/react/24/outline';
 
-import Logo from '~/core/ui/Logo';
+import LogoImageMini from '~/core/ui/Logo/LogoImageMini';
 import Container from '~/core/ui/Container';
 import If from '~/core/ui/If';
 import Button from '~/core/ui/Button';
@@ -28,7 +28,7 @@ const SiteHeader: React.FCC<{
       <Container>
         <div className="flex w-full items-center justify-between">
           <div className={'flex items-center lg:space-x-8'}>
-            <Logo />
+            <LogoImageMini />
 
             <div className={'hidden lg:flex'}>
               {/* <SiteNavigation /> */}
