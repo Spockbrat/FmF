@@ -21,7 +21,7 @@ function Footer() {
           >
             <div className={'flex flex-col space-y-4'}>
               <div>
-                <LogoImage className={'w-[65px] md:w-[95px]'} />
+                <LogoImage className={'w-[85px] md:w-[115px]'} />
               </div>
 
               <div>
