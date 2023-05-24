@@ -39,8 +39,6 @@ function Footer() {
             </div>
           </div>
 
-          
-
             <NewsletterSignup />
           </div>
       </Container>

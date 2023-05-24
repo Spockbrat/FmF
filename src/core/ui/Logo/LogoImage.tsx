@@ -5,11 +5,11 @@ const LogoImage: React.FCC<{
 }> = ({ className }) => {
   return (
     <svg
+    width={105}
+    className={classNames(`w-[95px] sm:w-[105px]`, className)}
+    viewBox="0 0 733 140"
+    fill="none"
     xmlns="http://www.w3.org/2000/svg"
-    xmlnsXlink="http://www.w3.org/1999/xlink"
-    width="64"
-    height="104"
-    viewBox="0 0 139 104"
   >
     <title>{"blendoor symbol/blue"}</title>
     <defs>
