@@ -18,15 +18,17 @@ export default function SubscriberFormContainer({ showFirstName, showLastName, n
 
   return (
     <div>
-      {isFormVisible ? (
+      {isFormVisible || newsletter ? (
        <CreateSubscriberForm
         showFirstName={showFirstName}
         showLastName={showLastName}
         newsletter={newsletter}
         onClose={handleFormClose}/>
       ) : (
-        <If condition={!isFormVisible}>
-            <button onClick={toggleVisibility} className={'inline-flex text-lg justify-center w-1/2 h-1/4  text-center py-4 mt-8 font-semibold text-black transition-all duration-200 bg-yellow-300 rounded-full lg:mt-12 hover:bg-yellow-400 focus:bg-yellow-400'} >Join Us</button>
+        <If condition={!isFormVisible && !newsletter}>
+            <button onClick={toggleVisibility} 
+              className={'inline-flex text-lg justify-center w-1/2 h-1/4  text-center py-4 mt-8 font-semibold text-black transition-all duration-200 bg-yellow-300 rounded-full lg:mt-12 hover:bg-yellow-400 focus:bg-yellow-400'} >
+              Join Us</button>
         </If>
         
         
