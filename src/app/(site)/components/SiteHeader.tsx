@@ -68,7 +68,7 @@ const SiteHeader: React.FCC<{
 function AuthButtons() {
   return (
     <div className={'hidden space-x-2 lg:flex'}>
-      <Button round color={'transparent'} href={configuration.paths.signIn}>
+      {/* <Button round color={'transparent'} href={configuration.paths.signIn}>
         <span>Sign In</span>
       </Button>
 
@@ -77,7 +77,7 @@ function AuthButtons() {
           <span>Sign Up</span>
           <ArrowRightIcon className={'h-4'} />
         </span>
-      </Button>
+      </Button> */}
     </div>
   );
 }
