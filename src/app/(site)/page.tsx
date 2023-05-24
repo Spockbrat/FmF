@@ -44,8 +44,30 @@ export default function Home() {
                     <h1 className={'mt-4 text-4xl font-heading text-black lg:mt-8 sm:text-6xl xl:text-8xl'}>Decide where you belong</h1>
                     <p className={'mt-4 text-base text-black lg:mt-8 sm:text-xl'}>Sign up for access</p>
                     <SubscriberFormContainer showFirstName={false} showLastName={false} newsletter={false} />
-                  </div>
+
+                    <div className={"flex items-center justify-center mt-10 space-x-6 lg:justify-start sm:space-x-8 delay-75"}>
+                        <div className={"flex items-center"}>
+                            <p className={"text-3xl font-medium text-gray-900 sm:text-4xl font-pj"}>200</p>
+                            <p className={"ml-3 text-sm text-gray-900 font-pj"}>Top<br />Companies</p>
+                        </div>
+
+                        <div className={"hidden sm:block"}>
+                            <svg className={"text-gray-400"} width="16" height="39" viewBox="0 0 16 39" fill="none" stroke="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <line x1="0.72265" y1="10.584" x2="15.7226" y2="0.583975"></line>
+                                <line x1="0.72265" y1="17.584" x2="15.7226" y2="7.58398"></line>
+                                <line x1="0.72265" y1="24.584" x2="15.7226" y2="14.584"></line>
+                                <line x1="0.72265" y1="31.584" x2="15.7226" y2="21.584"></line>
+                                <line x1="0.72265" y1="38.584" x2="15.7226" y2="28.584"></line>
+                            </svg>
+                        </div>
+
+                        <div className={"flex items-center"}>
+                            <p className={"text-3xl font-medium text-gray-900 sm:text-4xl font-pj"}>30k</p>
+                            <p className={"ml-3 text-sm text-gray-900 font-pj"}>Data<br />Points</p>
+                        </div>
+                    </div>
                
+                  </div>
 
                 <div>
                     <img className={'w-full'} src="https://cdn.rareblocks.xyz/collection/celebration/images/hero/1/hero-img.png" alt="" />
