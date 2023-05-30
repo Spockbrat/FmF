@@ -27,7 +27,7 @@ export default function Home() {
         <Container>
           <SlideUpTransition>
             <div className={
-                  'bg-[#FCF8F1] bg-opacity-30 py-10 sm:py-16 lg:py-24'}>
+                  'bg-[#F5F5F4] bg-opacity-30 py-10 sm:py-16 lg:py-24'}>
               <div className={'px-4 mx-auto max-w-7xl sm:px-6 lg:px-8'}>
                 <div className={'grid items-left grid-cols-1 gap-12 lg:grid-cols-2'}>
                {/*  <Button variant={'flat'} size={'small'} round>
@@ -70,7 +70,12 @@ export default function Home() {
                   </div>
 
                 <div>
-                    <img className={'w-full'} src="https://cdn.rareblocks.xyz/collection/celebration/images/hero/1/hero-img.png" alt="" />
+                <Image
+                width={1824}
+                height={1824}
+                src={`/assets/images/HeroImage.001.png`}
+                alt={`App Image`}
+              />
                 </div>
                 
                 </div>
