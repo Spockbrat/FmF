@@ -45,7 +45,7 @@ export default function Home() {
                     <p className={'mt-6 text-base text-black lg:mt-8 sm:text-xl'}>Sign up for access to the only place where a company is matched to you and not the other way around</p>
                     <SubscriberFormContainer showFirstName={false} showLastName={false} newsletter={false} />
 
-                    <div className={"flex items-center justify-center mt-12 space-x-6 lg:justify-start sm:space-x-8 delay-75"}>
+                    <div className={"flex mt-12 space-x-6 lg:justify-start sm:space-x-8 delay-75"}>
                         <div className={"flex items-center"}>
                             <p className={"text-3xl font-medium text-gray-900 sm:text-4xl font-pj"}>200</p>
                             <p className={"ml-3 text-sm text-gray-900 font-pj"}>Top<br />Companies</p>
@@ -69,7 +69,7 @@ export default function Home() {
                
                   </div>
 
-                <div>
+                <div className={'hidden lg:block'}>
                 <Image
                 width={1824}
                 height={1824}
