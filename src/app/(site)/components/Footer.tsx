@@ -17,9 +17,14 @@ function Footer() {
         <div className="mb-8">
           <p className="text-lg font-bold text-gray-900">About BlendScore</p>
           <p className="mt-4 text-base font-normal leading-6 text-gray-600">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-            Nullam dictum aliquet accumsan porta lectus ridiculus in mattis. 
-            Netus sodales in volutpat ullamcorper amet adipiscing fermentum.
+          BlendScore&trade; is a dynamic scoring system that rates corporate equity, 
+          diversity & inclusion for organizations based on 4 focus areas: 
+          Leadership, Retention, Recruiting, and Impact. 
+          
+          What differentiates BlendScore from similar indices is it periodically 
+          pulls from publicly available, open-source data providing the most 
+          accurate and up-to-date information. Unlike other diversity rankings, 
+          BlendScore&trade; is an unsolicited rating.
           </p>
         </div>
         <div className="flex items-center">
