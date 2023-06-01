@@ -42,7 +42,7 @@ export default function Home() {
                   <div>
                     <p className={'text-base font-semibold tracking-wider text-blue-600 uppercase'}>More than a search. An experience</p>
                     <h1 className={'mt-4 text-4xl font-heading text-black lg:mt-8 sm:text-6xl xl:text-8xl'}>Decide where you belong</h1>
-                    <p className={'mt-4 text-base text-black lg:mt-8 sm:text-xl'}>Sign up for access</p>
+                    <p className={'mt-6 text-base text-black lg:mt-8 sm:text-xl'}>Sign up for access to the only place where a company is matched to you and not the other way around</p>
                     <SubscriberFormContainer showFirstName={false} showLastName={false} newsletter={false} />
 
                     <div className={"flex items-center justify-center mt-12 space-x-6 lg:justify-start sm:space-x-8 delay-75"}>
