@@ -20,7 +20,7 @@ function Footer() {
           BlendScore&trade; is a dynamic scoring system that rates corporate equity, 
           diversity & inclusion for organizations based on 4 focus areas: 
           Leadership, Retention, Recruiting, and Impact. 
-          
+          <br /><br />
           What differentiates BlendScore from similar indices is it periodically 
           pulls from publicly available, open-source data providing the most 
           accurate and up-to-date information. Unlike other diversity rankings, 
