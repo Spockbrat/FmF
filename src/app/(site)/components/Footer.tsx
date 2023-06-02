@@ -17,22 +17,24 @@ function Footer() {
             <div className="mb-8">
               <p className="text-lg font-bold text-gray-900">About BlendScore</p>
               <p className="mt-4 text-base font-normal leading-6 text-gray-600">
-                BlendScore&trade; is a dynamic scoring system that rates corporate equity, 
-                diversity & inclusion for organizations based on 4 focus areas: 
-                Leadership, Retention, Recruiting, and Impact. 
+                BlendScore&trade; is the first of its kind credit-like score for corporate
+                social responsibility that leverages publicly available information to provide
+                key insights to employees, shareholders, and consumers.  
                 <br /><br />
-                What differentiates BlendScore from similar indices is it periodically 
-                pulls from publicly available, open-source data providing the most 
-                accurate and up-to-date information. Unlike other diversity rankings, 
-                BlendScore&trade; is an unsolicited rating.
+                Our real-time scoring system ingests data from enterprise clients and analyzes
+                their proxy statements, DEI/CSR reports, EEOC reports, media, benefits, partnerships,
+                suppliers, pledges, donations, and social and political activity.
+                <br /><br />
+                Find My Fit is an application powered by BlendScore&trade; to help employees
+                find jobs at companies that align with their values and value their identities.
               </p>
             </div>
             <div className="flex items-center">
               <LogoImage className="w-[85px] md:w-[115px]" />
               <div className="-ml-4">
-                <p className="text-sm text-gray-500 dark:text-gray-400">
+                {/* <p className="text-sm text-gray-500 dark:text-gray-400">
                   Find My Fit is powered by BlendScore
-                </p>
+                </p> */}
                 <p className="text-xs text-gray-500 dark:text-gray-400">
                   © {YEAR} {configuration.site.siteName}. All Rights Reserved.
                 </p>

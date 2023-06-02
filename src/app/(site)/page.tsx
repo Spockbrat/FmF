@@ -37,17 +37,20 @@ export default function Home() {
                     <ChevronRightIcon className={'h-3'} />
                   </span>
                 </Button> */}
-
                
                   <div>
-                    <p className={'text-base font-semibold tracking-wider text-blue-600 uppercase'}>More than a search. An experience</p>
-                    <h1 className={'mt-4 text-4xl font-heading text-black lg:mt-8 sm:text-6xl xl:text-8xl'}>Decide where you belong</h1>
-                    <p className={'mt-6 text-base text-black lg:mt-8 sm:text-xl'}>Sign up for access to the only place where a company is matched to you and not the other way around</p>
+                    <p className={'text-base font-semibold tracking-wider text-blue-600 uppercase'}>More than a job search</p>
+                    <h1 className={'mt-4 text-4xl font-heading text-black lg:mt-8 sm:text-6xl xl:text-8xl'}>
+                      
+                      Discover 
+                
+                        where you belong</h1>
+                    <p className={'mt-6 text-base text-black lg:mt-8 sm:text-xl'}>Sign up for access to match with companies that share your values and value your identities</p>
                     <SubscriberFormContainer showFirstName={false} showLastName={false} newsletter={false} />
 
                     <div className={"flex mt-12 space-x-6 lg:justify-start sm:space-x-8 delay-75"}>
                         <div className={"flex items-center"}>
-                            <p className={"text-3xl font-medium text-gray-900 sm:text-4xl font-pj"}>200</p>
+                            <p className={"text-3xl font-medium text-gray-900 sm:text-4xl font-pj"}>400</p>
                             <p className={"ml-3 text-sm text-gray-900 font-pj"}>Top<br />Companies</p>
                         </div>
 
@@ -62,7 +65,7 @@ export default function Home() {
                         </div>
 
                         <div className={"flex items-center"}>
-                            <p className={"text-3xl font-medium text-gray-900 sm:text-4xl font-pj"}>30k</p>
+                            <p className={"text-3xl font-medium text-gray-900 sm:text-4xl font-pj"}>180k</p>
                             <p className={"ml-3 text-sm text-gray-900 font-pj"}>Data<br />Points</p>
                         </div>
                     </div>
