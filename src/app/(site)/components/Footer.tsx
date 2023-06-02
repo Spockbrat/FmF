@@ -32,11 +32,11 @@ function Footer() {
             <div className="flex items-center">
               <LogoImage className="w-[85px] md:w-[115px]" />
               <div className="-ml-4">
-                {/* <p className="text-sm text-gray-500 dark:text-gray-400">
-                  Find My Fit is powered by BlendScore
-                </p> */}
+                <p className="text-sm text-gray-500 dark:text-gray-400">
+                © {YEAR} {configuration.site.siteName} is a subsidiary of SVP & Co, LLC.
+                </p>
                 <p className="text-xs text-gray-500 dark:text-gray-400">
-                  © {YEAR} {configuration.site.siteName}. All Rights Reserved.
+                  All Rights Reserved.
                 </p>
               </div>
             </div>
